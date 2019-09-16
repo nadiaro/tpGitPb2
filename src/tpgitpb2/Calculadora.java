@@ -23,17 +23,23 @@ public class Calculadora {
 				System.out.print("Ingrese un numero");	
 				b=teclado.nextInt();
 			 
-				if(opcion.equals(1)){
-					resultado = a + b;
-					}else if(opcion.equals(2)){
-					resultado = a - b;
-					}else if(opcion.equals(3)){
-					resultado = a * b;
-					}else{
-					resultado = a / b;
-					}
-					System.out.println("El resultado es " + resultado.toString());			
-
+				switch (opcion) {
+			      case 1:
+			           System.out.println( a + b );
+			           break;
+			      case 2:
+			           System.out.println( a - b );
+			           break;
+			      case 3:
+			           System.out.println( a * b );
+			           break;
+			      case 4:
+			           System.out.println( a / b );
+			           break;
+			      default:
+			           System.out.println("error" );
+			           break;
+			      }
 		  }
 			
 		}
