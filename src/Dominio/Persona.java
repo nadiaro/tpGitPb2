@@ -26,7 +26,7 @@ public Persona(String mail, String password,
 	}
 	@Override
 	public String toString() {
-		return "Persona [nombre= " + nombre + ", apellido=" + apellido + "]";
+		return "Persona [nombre= " + nombre + " , apellido=" + apellido + "]";
 	}
 
 	
